@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: #1B2631;
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+}
+section {
+  background:#212F3C;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+strong {
+  color: #fff;
+}
+span {
+  color: #8B98A5;
+}
+
+button {
+  background: #fff;
+  text-decoration-color: aliceblue;
+}

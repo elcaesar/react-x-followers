@@ -1,0 +1,91 @@
+.x-followCard {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 8rem-diz;
+  width: 348px;
+  height: 65px;
+  justify-content: space-between;
+  cursor: pointer; 
+}
+
+.titleCard {
+  font-family: system-ui;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.x-followCard:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+.x-followCard-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.x-followCard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.x-followCard-infoUserName {
+  opacity: .6;
+}
+
+.x-followCard-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.x-followCard-button {
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 16px; 
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: .3s ease background-color;
+  cursor: pointer;
+}
+
+.x-followCard-textButton {
+  display: block;
+}
+
+.x-followCard-button.is-following { 
+  border: 1px inset #bff;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+
+}
+
+.x-followCard-button:hover {
+  background: rgb(220, 216, 215);
+}
+
+.x-followCard-button.is-following:hover {
+  border: thin solid rgba(247, 20, 69, 0.877);
+  color: rgba(172, 14, 48, 0.877);
+  background: rgba(238, 13, 13, 0.096);
+  transition: .3 ease all;
+}
+
+.x-followCard-button.is-following:hover .x-followCard-leaveFollow {
+  display: block;
+  color: rgba(253, 26, 75, 0.877);
+  font-weight: bold;
+}
+
+.x-followCard-button.is-following:hover .x-followCard-textButton {
+  display: none;
+}
+
+.x-followCard-leaveFollow {
+  display: none;
+}
